@@ -184,10 +184,6 @@ public class MyFlappyBird extends ApplicationAdapter {
 						posicaoCanoHorizontal = larguraDoDispositivo;
 						moeda.setPegou(false);
 
-
-						premio.setX(posicaoCanoHorizontal + numeroRandomico.nextInt((int)larguraDoDispositivo));
-						premio.setY(numeroRandomico.nextInt((int)alturaDoDispositivo));
-
 					}
 
 					if(posicaoFundoHorizontal + larguraDoDispositivo < 0 )
@@ -266,12 +262,6 @@ public class MyFlappyBird extends ApplicationAdapter {
 
 			batch.draw(moeda.getMoeda(), posicaoCanoHorizontal + tuboSuperior.getWidth() / 2 - 50 / 2,
 					alturaDoDispositivo / 2 + alturaEntreCanosRandomica - 50 / 2, 51, 50);
-
-
-
-				batch.draw(premio.getMoeda(), premio.getX(),
-						premio.getY(), 51, 50);
-
 
 		}
 
